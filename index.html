@@ -7,6 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#090d16">
+  <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" sizes="192x192" href="https://i.postimg.cc/B6FRYbCV/Vencimientos.png">
   <link rel="apple-touch-icon" href="https://i.postimg.cc/B6FRYbCV/Vencimientos.png">
   <style>
@@ -17,5 +18,10 @@
 </head>
 <body>
   <iframe src="https://script.google.com/macros/s/AKfycbzIKrKcoliEugkSZzkqaEXzwsbLhxnVOJUHE25baJB9WJCJzp3yD8qYGXRlQ-LYp-Iv/exec"></iframe>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
 </html>
